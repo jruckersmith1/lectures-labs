@@ -27,6 +27,7 @@ function sum(a,b){ //eslint-disable-line
     var total = a + b;
     return [ total, 'The sum of ' + a + ' and ' + b +' is ' + total + '.' ];
     // returns array first element = sum, second = string like example
+
 }
 
 // Here is the test for sum(); uncomment it to run it
