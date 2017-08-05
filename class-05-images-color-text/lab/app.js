@@ -96,13 +96,24 @@ new branch for your work on the next question!
 
 */
 
-// Write your code here
+// Write your code here 
+// sum(1,2)[0];
 function sumAndMultiply(a,b,c){ //eslint-disable-line
+  var totalSum = sum( sum(a,b)[0],c );
+  console.log( 'total sum' + totalSum[0] );
+  
+  var totalProduct = multiply( multiply(a,b)[0],c );  
+  console.log( 'total product' + totalProduct[0]);
+  return [ totalSum[0], totalProduct[0], a + ' and ' + b + ' and ' + c + ' sum to ' + totalSum[0] + '.', 'The product of ' + a + ' and ' + b + ' and ' + 5 + ' is ' + totalProduct[0] + '.'];
+
+
 
 }
 
+
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
 
 
 /////////////////////////////////////
